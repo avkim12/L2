@@ -20,7 +20,7 @@ import (
 Программа должна проходить проверки go vet и golint.
 */
 
-func GetTime() time.Time {
+func getTime() time.Time {
 	time, err := ntp.Time("0.beevik-ntp.pool.ntp.org")
 	if err != nil {
 		fmt.Fprintln(os.Stderr, err)
@@ -30,5 +30,5 @@ func GetTime() time.Time {
 }
 
 func main() {
-	fmt.Println(GetTime())
+	fmt.Println(getTime())
 }

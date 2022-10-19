@@ -24,7 +24,7 @@ import (
 Функция должна проходить все тесты. Код должен проходить проверки go vet и golint.
 */
 
-func Unpack(s string) (str string, err error) {
+func unpack(s string) (str string, err error) {
 
 	var sb strings.Builder
 
@@ -50,5 +50,5 @@ func Unpack(s string) (str string, err error) {
 }
 
 func main() {
-	fmt.Println(Unpack("qwe\\45"))
+	fmt.Println(unpack("qwe\\45"))
 }

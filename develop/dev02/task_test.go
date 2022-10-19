@@ -39,7 +39,7 @@ func TestUnpack(t *testing.T) {
 	}
 
 	for _, testCase := range testTable {
-		output, _ := Unpack(testCase.str)
+		output, _ := unpack(testCase.str)
 		if output != testCase.expected {
 			t.Errorf("Output %q not equal to expected %q", output, testCase.expected)
 		}
